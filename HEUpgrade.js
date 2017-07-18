@@ -1,20 +1,15 @@
 // ==UserScript==
 // @name         HEUpgrade
+// @namespace    http://tampermonkey.net/
 // @version      1.2
-// @description  Upgrade remaining CPUs and HDDs to max
+// @description  This script will upgrade all the CPUs and HDDs to maximum.
 // @author       Emin Afroz (Omega on HackerExperience)
-// @match        https://legacy.hackerexperience.com/hardware*
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
+// @match        https://*.hackerexperience.com/hardware
+// @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
-// @grant        none
 // ==/UserScript==
  
 const account = 'ENTERACCOUNTNUMBER';
- 
-$(document).ready(function() {
-    upgradeCPU();
-    upgradeHDD();
-});
  
 function upgradeCPU(){
 var servers = $(".widget-content.padding > ul > a");
@@ -89,3 +84,8 @@ var servers = $(".widget-content.padding > ul > a");
     }
     window.location = serverLink;
 }
+
+$(document).ready(function() {
+    upgradeCPU();
+    upgradeHDD();
+});
