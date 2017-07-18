@@ -10,7 +10,7 @@ I hope you guys find it useful!
 All you need is a Userscript manager like ***Greasemonkey*** (for Chrome) or ___Tampermonkey___ (for Firefox).
 
 ### Installing
-To install, click https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade.user.js
+To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade.user.js)
 
 ### Usage
 Go to the Hardware tab, turn on the script, and refresh!
