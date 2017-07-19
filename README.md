@@ -7,7 +7,7 @@ This took me a couple of days of googling and understanding how to handle redire
 I hope you guys find it useful!
 
 ### Prerequisites
-All you need is a Userscript manager like ***Greasemonkey*** (for Chrome) or ___Tampermonkey___ (for Firefox).
+All you need is a Userscript manager like ***Greasemonkey*** (for Firefox) or ___Tampermonkey___ (for Chrome).
 
 ### Installing
 To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade.user.js)
