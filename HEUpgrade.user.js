@@ -4,7 +4,7 @@
 // @version      1.2
 // @description  This script will upgrade all the CPUs and HDDs to maximum.
 // @author       Emin Afroz (Omega on HackerExperience)
-// @match        https://*.hackerexperience.com/hardware
+// @match        https://*.hackerexperience.com/hardware*
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
 // ==/UserScript==
