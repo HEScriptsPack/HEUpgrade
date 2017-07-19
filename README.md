@@ -15,3 +15,4 @@ Once installed, edit it to change ENTERACCOUNTNUMBER to your bank account number
 
 ### Usage
 Go to the Hardware tab, turn on the script, and refresh!
+To stop, just turn off the script!
