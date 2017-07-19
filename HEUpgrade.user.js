@@ -53,7 +53,7 @@ var servers = $(".widget-content.padding > ul > a");
     var nextIndex = -1;
     var serverLink = "";
  
-    //Find CPU link
+    //Find HDD link
     servers.each(function(index) {
         hddUnit = $(this).find(".list-user > small").eq(1).text();
         if(hddUnit != "10 GB")
