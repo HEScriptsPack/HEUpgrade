@@ -1,4 +1,4 @@
-# HEUpgrade
+# HEUpgrade (Now v2 available!)
 This script will help you upgrade all your servers' CPU and HDD to maximum configuration (i.e 4GHz and 10GB SSD) in Hacker Experience.
 
 ### Intro
@@ -15,4 +15,8 @@ Once installed, edit it to change ENTERACCOUNTNUMBER to your bank account number
 
 ### Usage
 Go to the Hardware tab, turn on the script, and refresh!
-To stop, just turn off the script!
+__v2__ will now show progress on servers left to be upgraded in the blue box section where it reads 'Help' by default. If it misses some, just refresh script.
+To stop, just turn off the script, and refresh again!
+
+### Notes
+If running into problems with the script, change the setInterval time from 1250 to higher like 1500 or 2000.
