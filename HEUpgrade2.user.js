@@ -32,7 +32,7 @@ function upgrade(){
         cpuUnit = server.find(".list-user > small").eq(0).text();
         hddUnit = server.find(".list-user > small").eq(1).text();
     }
-    if(index == totalServers)
+    if(index >= totalServers)
     {
         clearInterval(interval);
         $('.label.label-info').html("Done :)");
