@@ -1,5 +1,6 @@
-# HEUpgrade (Now v2 available!)
+# HEUpgrade (Now v2 available! xHD upgrade added!)
 This script will help you upgrade all your servers' CPU and HDD to maximum configuration (i.e 4GHz and 10GB SSD) in Hacker Experience.
+A script for upgrading xHDs has been added as well which was written alongside writing HEUpgrade v2. If the former is broke for you, use the latter on your own risk
 
 ### Intro
 This is the first script I've ever written, so please bear with it as it doesn't have any interface, let alone a fancy one.
@@ -10,13 +11,15 @@ I hope you guys find it useful!
 All you need is a Userscript manager like ***Greasemonkey*** (for Firefox) or ___Tampermonkey___ (for Chrome).
 
 ### Installing
-To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade.user.js)
+To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade2.user.js)
 Once installed, edit it to change ENTERACCOUNTNUMBER to your bank account number ***(without the #)*** which will be used to buy the servers. Don't worry, this is safe as pie because no data is being sent anywhere.
 
 ### Usage
 Go to the Hardware tab, turn on the script, and refresh!
 __v2__ will now show progress on servers left to be upgraded in the blue box section where it reads 'Help' by default. If it misses some, just refresh script.
 To stop, just turn off the script, and refresh again!
+
+__Added:__ Upgrade script for xHD. Read the note before proceeding.
 
 ### Notes
 If running into problems with the script, change the setInterval time from 1250 to higher like 1500 or 2000.
