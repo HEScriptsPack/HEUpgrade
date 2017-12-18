@@ -1,6 +1,6 @@
 # HEUpgrade (Now v2 available! xHD upgrade added!)
 This script will help you upgrade all your servers' CPU and HDD to maximum configuration (i.e 4GHz and 10GB SSD) in Hacker Experience.
-A script for upgrading xHDs has been added as well which was written alongside writing HEUpgrade v2. If the former is broke for you, use the latter on your own risk
+A script for upgrading xHDs to max has been added as well which was written alongside writing HEUpgrade v2. If the former is broke for you, use the latter on your own risk
 
 ### Intro
 This is the first script I've ever written, so please bear with it as it doesn't have any interface, let alone a fancy one.
