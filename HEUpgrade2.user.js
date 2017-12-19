@@ -15,7 +15,7 @@ var index = 0;
 var interval;
 
 $(document).ready(function() {
-    interval = setInterval(upgrade,1250);
+    interval = setInterval(upgrade,1750);
 });
 
 function upgrade(){
