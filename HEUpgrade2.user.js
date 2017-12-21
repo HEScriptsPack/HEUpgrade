@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HEUpgrade v2
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      2.0
 // @description  Upgrade remaining CPUs and HDDs to max
 // @author       Emin Afroz (Omega on HackerExperience)
 // @include      https://legacy.hackerexperience.com/hardware*
