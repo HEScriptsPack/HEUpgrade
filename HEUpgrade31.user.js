@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         HEUpgrade v3
+// @name         HEUpgrade v3.1
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      3.1
 // @description  Upgrade remaining CPUs and HDDs to max
 // @author       Emin Afroz (Omega on HackerExperience)
 // @include      https://legacy.hackerexperience.com/hardware
@@ -16,8 +16,10 @@ var totalServers = $(".widget-content.padding > ul > a").length;
 var index = 0;
 var times;
 var interval;
+var clan;
 
 $(document).ready(function() {
+    clan = window.location.href.includes("clan");
     $('.label.label-info').html("Starting...");
     times = prompt("How many servers to upgrade? Leave negative value for all.",-1);
     if(times !== null && times !== 0)
@@ -51,71 +53,63 @@ function upgrade(){
     serverID = server.attr('href').replace("?opt=upgrade&id=","").replace("hardware","");
 
     if(cpuUnit != "4 GHz")
-        getData1(serverID);
+        getData(serverID,true);
     if(hddUnit != "10 GB")
-        getData2(serverID);
+        getData(serverID,false);
 
     index++;
     times--;
 }
 
-//getData1(link);
-function getData1(id){
-    $.ajax({
-        type: 'GET',
-        async: false,
-        url: "/hardware?opt=upgrade&id=" + id,
-        data: {
-            opt: 'upgrade',
-            acc: account
-        },
-        success: function(data) {
-            postData('cpu',5000,8);
-        }
-    });
-}
+//getData(link,true);
+function getData(id,isCPU){
+    var tempUrl;
+    if(clan)
+        tempUrl = "/internet?view=clan&action=upgrade&server=" + id;
+    else
+        tempUrl =  "/hardware?opt=upgrade&id=" + id;
 
-//getData2(link);
-function getData2(id){
     $.ajax({
         type: 'GET',
         async: false,
-        url: "/hardware?opt=upgrade&id=" + id,
-        data: {
-            opt: 'upgrade',
-            acc: account
-        },
-        success: function(data) {
-            postData('hdd',8000,6);
+        url: tempUrl,
+        success: function() {
+            if(isCPU)
+                postData('cpu',5000,8);
+            else
+                postData('hdd',8000,6);
         }
     });
 }
 
 //postData('cpu', 5000, 8);
 function postData(itemToBuy, itemCost, itemId){
-	currentCost = moneyToNumber(itemCost);
-	if(currentCost < itemCost)	{
-		clearInterval(interval);
-		$('.label.label-info').html("Out of money! :(");
-		return;
-	}
+    currentCost = moneyToNumber(itemCost);
+    if(currentCost < itemCost)	{
+        clearInterval(interval);
+        $('.label.label-info').html("Out of money! :(");
+        return;
+    }
     var dataObject = {};
     dataObject.acc = account;
     dataObject.act = itemToBuy;
     dataObject['part-id'] = itemId;
     dataObject.price = itemCost;
+    if(clan)
+        dataObject.clan = 1;
     $.ajax({
         type: 'POST',
         async: false,
         data: dataObject,
         success: function() {
-			currentCost -= itemCost;
-			var newCost = "$" + currentCost.toLocaleString();
+            currentCost -= itemCost;
+            var newCost = "$" + currentCost.toLocaleString();
             $("div.finance-info > div > span").html(newCost);
+	    console.log("Bought a server!")	
         },
         error: function() {
-			console.log("Already upgraded!");
-		}
+            console.log("Already upgraded!");
+        }
     });
 }
 
