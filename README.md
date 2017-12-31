@@ -11,7 +11,7 @@ I hope you guys find it useful!
 All you need is a Userscript manager like **Greasemonkey** (for Firefox) or __Tampermonkey__ (for Chrome).
 
 ### Installing
-To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade3.user.js)
+To install, click [here!](https://github.com/Epsilon-Alpha/heupgrade/raw/master/HEUpgrade31.user.js)
 Once installed, edit it to change ENTERACCOUNTNUMBER to your bank account number **(without the #)** which will be used to buy the servers. Don't worry, this is safe as pie because no data is being sent anywhere.
 
 ### Usage
