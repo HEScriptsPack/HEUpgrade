@@ -4,9 +4,9 @@
 // @version      3.1
 // @description  Upgrade remaining CPUs and HDDs to max
 // @author       Emin Afroz (Omega on HackerExperience)
-// @include      https://legacy.hackerexperience.com/hardware
-// @include      https://legacy.hackerexperience.com/hardware?opt=upgrade
-// @include      https://legacy.hackerexperience.com/internet?view=clan
+// @include      https://*.hackerexperience.com/hardware
+// @include      https://*.hackerexperience.com/hardware?opt=upgrade
+// @include      https://*.hackerexperience.com/internet?view=clan
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
 // ==/UserScript==
