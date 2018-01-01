@@ -26,6 +26,7 @@ If running into problems with the script, change the setInterval time from 1250 
 
 ## v3.1  29th December, 2017
 - Added support for upgrading your own clan servers
+- Works on subdomains other than those starting with 'legacy'
 
 ## v3.0 - 22nd December, 2017
 - User prompt to ask number of servers to upgrade
