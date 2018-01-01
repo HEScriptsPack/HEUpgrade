@@ -1,6 +1,7 @@
-# HEUpgrade (Now v3.1 available! xHD upgrade added!)
+# HEUpgrade (Now v3.2 available! xHD upgrade added!)
 This script will help you upgrade all your servers' CPU and HDD to maximum configuration (i.e 4GHz and 10GB SSD) in Hacker Experience. The script finds the first server such that either of the CPU upgrade or the HDD upgrade is missing.
-A script for upgrading xHDs to max has been added as well. ~~which was written alongside writing HEUpgrade v2. If the former is broke for you, use the latter on your own risk~~ An xHD variant based on v3 may be written soon.
+~~A script for upgrading xHDs to max has been added as well which was written alongside writing HEUpgrade v2. If the former is broke for you, use the latter on your own risk An xHD variant based on v3 may be written soon.~~
+Works for external hard drives as well now, testing phase.
 
 ### Intro
 This is the first script I've ever written, so please bear with it as it doesn't have any interface, let alone a fancy one.
@@ -24,7 +25,12 @@ __Added:__ Upgrade script for xHD. Read the note before proceeding.
 ### Notes
 If running into problems with the script, change the setInterval time from 1250 to higher like 1500 or 2000.
 
-## v3.1  29th December, 2017
+## v3.2 - 1st January, 2018 
+- Added the script for upgrading xHD into HEUpgrade
+- Minor bug fixes
+- Beta version, hasn't been tested well, so it may have issues.
+
+## v3.1 - 29th December, 2017
 - Added support for upgrading your own clan servers
 - Works on subdomains other than those starting with 'legacy'
 
