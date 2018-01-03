@@ -32,7 +32,7 @@ $(document).ready(function() {
     else if(times < 0)
     {
         totalServers = $(".widget-content.padding > ul > a").length;
-        interval = setInterval(upgrade,500);
+        interval = setInterval(upgrade,2000);
     }
     else
         $('.label.label-info:first').html("Have a nice day. ^^");
