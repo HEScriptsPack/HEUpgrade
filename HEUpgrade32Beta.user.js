@@ -12,7 +12,7 @@
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
 // ==/UserScript==
 
-const account = 'ENTERACCHERE';
+var account = 'ENTERACCHERE';
 var totalServers;
 var index = 0, counter = 0;
 var interval;
@@ -21,6 +21,7 @@ var clan, isCPU, isXHD;
 $(document).ready(function() {
     isXHD = window.location.href.includes("xhd");
     clan = window.location.href.includes("clan");
+    account = account.replace("#","");
     $('.label.label-info:first').html("Starting...");
     var times = prompt("How many servers to upgrade? Leave negative value for all.",-1);
     if(times > 0)
