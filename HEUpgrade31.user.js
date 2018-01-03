@@ -12,7 +12,7 @@
 // @icon         http://www.icon100.com/up/3294/256/panda_08.png
 // ==/UserScript==
 
-const account = 'ACCNUMBER';
+var account = 'ACCNUMBER';
 var totalServers = $(".widget-content.padding > ul > a").length;
 var index = 0;
 var times;
@@ -21,6 +21,7 @@ var clan;
 
 $(document).ready(function() {
     clan = window.location.href.includes("clan");
+    account = account.replace("#","");
     $('.label.label-info').html("Starting...");
     times = prompt("How many servers to upgrade? Leave negative value for all.",-1);
     if(times !== null && times !== 0)
