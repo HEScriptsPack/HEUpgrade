@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('.label.label-info').html("Starting...");
     times = prompt("How many servers to upgrade? Leave negative value for all.",-1);
     if(times !== null && times !== 0)
-        interval = setInterval(upgrade,500);
+        interval = setInterval(upgrade,2000);
     else
         $('.label.label-info').html("Have a nice day. ^^");
 });
